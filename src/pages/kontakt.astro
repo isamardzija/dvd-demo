@@ -1,0 +1,33 @@
+---
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import Hero from "../components/Hero.astro";
+import HeroImage from "../../public/images/DVD-Sikirevci-vatrogasni-dom-i-vatrogasna-vozila.jpg";
+---
+
+<DefaultLayout title="Početna">
+  <Hero
+    HeroImage={HeroImage}
+    alt="Vatrograsni dom i vozila DVD-a Sikirevci"
+    title="Kontakt"
+  />
+  <article class="text-center">
+    
+<h2 class="text-3xl font-bold">Dobrovoljno vatrogasno društvo Sikirevci</h2>
+<p class="text-2xl">OIB: 80600094163</p>
+<br>
+
+<address class="text-2xl">
+    <p>Ulica Ljudevita Gaja 12 35224 Sikirevci</p>
+    <p>dvdsikirevci2@gmail.com</p> 
+</address>
+<br>
+<div class="divider"></div>
+<div class="flex flex-col gap-2 p-4">
+    <h3 class="text-2xl font-bold">Uprava</h3>
+    <p class="text-xl">Predsjednik: Martin Živić 091 144 4521</p>
+    <p class="text-xl">Predsjednik: Martin Živić 091 144 4521</p>
+    <p class="text-xl">Predsjednik: Martin Živić 091 144 4521</p>
+</div>
+
+  </article>
+</DefaultLayout>

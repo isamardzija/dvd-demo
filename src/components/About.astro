@@ -1,0 +1,25 @@
+---
+import Pic from '../../public/images/dvd-sikirevci-povijest.jpg'
+import ReadMoreButton from '../components/ReadMoreButton.astro'
+const { img, alt } = Astro.props;
+---
+
+<section class="p-4">
+  <h2 class="text-4xl">O nama</h2>
+  <div class="divider"></div>
+  <div class="flex flex-col sm:flex-row py-4">
+      <img class="sm:max-w-[50%] object-cover" src={Pic} alt={alt} />
+      <p class="p-4">
+        Dobrovoljne vatrogasne udruge u ovom dijelu Hrvatske imaju dugu i bogatu
+        tradiciju, a nastale su na temeljima dragovoljnosti, humanosti i
+        solidarnosti. Osim pomoći pri spašavanju ljudi i imovine u slučaju požara
+        ili elementarnih nepogoda bile su nositelji kulturno-zabavnog života u selu.
+        Dobrovoljno vatrogasno društvo Sikirevci osnovano je 8. rujna. 1928. godine
+        na prijedlog gospodina Ljubomira Pleše tadašnjeg Sikirevačkog učitelja koji
+        je tog dana sakupio mještane i održao Osnivačku skupštinu Dobrovoljnog
+        vatrogasnog društva Sikirevci...
+      </p>
+      
+      <ReadMoreButton text='Pročitaj više' url="/onama"></ReadMoreButton>
+    </div>
+</section>

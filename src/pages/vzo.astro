@@ -2,17 +2,13 @@
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import Hero from "../components/Hero.astro";
 import HeroImage from "../../public/images/DVD-Sikirevci-vatrogasni-dom-i-vatrogasna-vozila.jpg";
-import Newest from '../components/Newest.astro'
-import About from '../components/About.astro'
 ---
 
-<DefaultLayout title="Početna">
-  <Hero
+
+<DefaultLayout title='VZO'>
+    <Hero
     HeroImage={HeroImage}
     alt="Vatrograsni dom i vozila DVD-a Sikirevci"
-    title="DVD Sikirevci"
-    subtitle='Službene stranice'
+    title="Vatrogasna Zajednica Općine"
   />
-  <Newest></Newest>
-  <About></About>
 </DefaultLayout>

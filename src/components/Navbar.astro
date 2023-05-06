@@ -1,0 +1,25 @@
+---
+import Logo from '../../public/images/DVD-Sikirevci-logo.png'
+---
+<div class="flex justify-between">
+
+  <nav class="sm:mr-0 sm:ml-auto flex justify-between basis-[95%]" >
+    <img src={Logo} alt="Grb DVD-a Sikirevci" class="w-[50px] md:w-[75px] self-start">
+    <ul class="hidden flex-col w-[100%] sm:flex sm:flex-row sm:w-[50%] justify-between text-center font-bold" id="navigation">
+        <li class="self-center hover:underline"><a href="/">Početna</a></li>
+        <li class="self-center hover:underline"><a href="/onama">O nama</a></li>
+        <li class="self-center hover:underline"><a href="/obavijesti">Obavijesti</a></li>
+        <li class="self-center hover:underline"><a href="/kontakt">Kontakt</a></li>
+        <li class="self-center hover:underline bg-darkgray py-2 px-4 text-white rounded"><a href="/vzo">VZO</a></li>
+      </ul>
+    </nav>
+      <button type='button' class="visible sm:invisible bg-darkgray w-[50px] h-[50px] text-white rounded" id="toggle">O</button>
+    </div>
+
+  <script>
+    const toggle = document.querySelector('#toggle')
+    const navigation = document.querySelector('#navigation')
+    toggle.addEventListener('click', () => {
+      navigation.classList.toggle('hidden')
+    })
+  </script>

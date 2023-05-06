@@ -1,0 +1,47 @@
+---
+import ArticleCard from "../components/ArticleCard.astro";
+import svFlorijanImage from "../../public/images/sveti-florijan.jpg";
+import daniOtvorenihVrata from "../../public/images/dani-otvorenih-vrata.jpg";
+import skupstina95 from "../../public/images/96-redovna-izvjestajna-skupstina.jpg";
+import cuvanjeGroba from "../../public/images/cuvanje-groba.jpg";
+---
+
+<section class="p-4">
+  <h2 class="text-4xl">Najnovije</h2>
+  <div class="divider"></div>
+  <div class="grid gap-4 lg:grid-cols-2">
+    <ArticleCard
+      title="Proslava sv. Florijana"
+      image={svFlorijanImage}
+      alt="Sveti Florijan"
+      date="03-05-2023"
+      author="Martin"
+      text="Proslava sv. Florijana, zaštitnika vatrogasaca, važan je događaj za DVD Sikirevci te za sve vatrogasce u općini. Ovaj dan obilježava se svečanom svetom misom, procesijom i polaganjem vijenaca kod spomenika palim vatrogascima, što predstavlja prigodu za zahvalu i sjećanje na hrabre vatrogasce koji su žrtvovali svoje živote u zaštiti drugih."
+    />
+    <ArticleCard
+      title="Dani otvorenih vrata"
+      image={daniOtvorenihVrata}
+      alt="Dani otvorenih vrata"
+      date="29-09-2023"
+      author="Josip"
+      text="Dan otvorenih vrata DVD-a Sikirevci prilika je za upoznavanje građana sa radom i aktivnostima ove udruge. Tijekom ovog događaja posjetitelji imaju priliku razgledati vatrogasnu opremu, vozila i prostorije, te se upoznati s članovima udruge i njihovim zadacima. Ovo je odličan način za promociju vatrogastva i edukaciju javnosti o važnosti preventivnih mjera u zaštiti od požara."
+    />
+    <ArticleCard
+      title="Tradicionalno čuvanje Isusovog groba"
+      image={cuvanjeGroba}
+      alt="Čuvanje Isusovog groba"
+      date="04-04-2023"
+      author="Josip"
+      text="DVD Sikirevci, kao vjernička organizacija, već dugi niz godina provodi tradiciju čuvanja Isusovog groba u svojoj župi. Tijekom Velikog tjedna, članovi udruge se izmjenjuju u dežurstvu kako bi osigurali da grob bude neprestano čuvan. Ova praksa predstavlja važan dio njihove vjere i kulture te pruža priliku za zajedničko duhovno iskustvo." />
+    <ArticleCard title="Održana 95. skupština DVD-a Sikirevci"
+      image={skupstina95}
+      alt="Skupstina"
+      date="06-03-2023"
+      author="Krunoslav"
+      text="Skupština DVD-a Sikirevci redoviti je godišnji sastanak članova udruge na kojem se donose važne odluke i raspravlja o planovima za budućnost. Na skupštini se predstavljaju izvještaji o radu i financijama, te se biraju novi članovi upravnih tijela. Ovo je prilika za članove da se informiraju o aktivnostima DVD-a Sikirevci te da iznesu svoje prijedloge i ideje za daljnji razvoj udruge."
+      
+    />
+  </div>
+</section>
+
+<style></style>

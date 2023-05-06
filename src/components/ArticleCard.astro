@@ -1,0 +1,17 @@
+---
+import ReadMoreButton from '../components/ReadMoreButton.astro'
+const {title, image, alt, date, author, text} = Astro.props
+---
+
+<article class="p-4 flex flex-col">
+    <h3 class="text-2xl font-bold py-2">{title}</h3>
+    <img class='h-[300px] w-[100%] object-cover'src={image} alt={alt}>
+    <div class="bg-lightgray">
+        <p>
+            Objavio: <span class="font-bold">{author} | {date}</span>
+        </p>
+    </div>
+    <p class="py-4">{text}</p>
+    <ReadMoreButton text='Pročitaj više' url="https://google.com"></ReadMoreButton>
+
+</article>
